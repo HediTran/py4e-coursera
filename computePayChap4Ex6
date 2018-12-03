@@ -11,4 +11,4 @@ try:
 		print("Gross pay is: ", round(hours*rate_per_hour, 2))
 except:
 	print("Error, please enter numeric input")
-return None
+
