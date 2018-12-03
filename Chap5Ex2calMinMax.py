@@ -1,3 +1,8 @@
+# # This program repeatedly reads numbers until the user enters "done".
+# Once "done is entered, prints out both the maximum and minimum of 
+# the numbers. If the user enters anything other than a number, detect
+# their mistake and skip to the next number
+
 def initializeMaxMinNumber():
 	while True:
 		initial_max_and_min_number = input("Enter a number: ")
