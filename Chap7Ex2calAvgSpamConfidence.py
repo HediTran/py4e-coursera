@@ -3,7 +3,7 @@
 	# X-DSPAM-Confidence: and calculate the average spam confidence
 	# https://www.py4e.com/code3/mbox.txt
 	
-	fname = input("Enter the file name: ")
+    fname = input("Enter the file name: ")
     try:
         fhand = open(fname)
     except:
