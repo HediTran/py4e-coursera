@@ -1,3 +1,7 @@
+# This program prompt the user for a search string (a location)
+# call the Google geocoding API and extract information
+# from the returned XML (in this exercise is the two-character country code)
+
 import urllib.request, urllib.parse, urllib.error
 import xml.etree.ElementTree as ET
 import ssl
@@ -36,6 +40,6 @@ while True:
 
     if results[0].findall('address_component')[-1].findall('type')[0].text == 'country':
         country_code = results[0].findall('address_component')[-1].find('short_name').text
-        print(country_code)
+        print('Country code:', country_code)
     else:
         print('This location is not in any country! Cannot return country code.')
