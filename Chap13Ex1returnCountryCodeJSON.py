@@ -46,6 +46,6 @@ while True:
     
     if js["results"][0]["address_components"][-1]["types"][0] == "country":
         country_code = js["results"][0]["address_components"][-1]["short_name"]
-        print(country_code)
+        print("Country code:", country_code)
     else:
         print("This location is not in any country! Cannot return country code.")
