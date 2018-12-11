@@ -44,7 +44,7 @@ while True:
         print(data)
         continue
     
-    if js["results"][0]["address_components"][-1]["types"][0] == "country":
+    if "country" in js["results"][0]["address_components"][-1]["types"]:
         country_code = js["results"][0]["address_components"][-1]["short_name"]
         print("Country code:", country_code)
     else:
