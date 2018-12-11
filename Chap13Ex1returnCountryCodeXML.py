@@ -38,7 +38,7 @@ while True:
 
     results = tree.findall('result')
 
-    if results[0].findall('address_component')[-1].findall('type')[0].text == 'country':
+    if 'country' in results[0].findall('address_component')[-1].findall('type'):
         country_code = results[0].findall('address_component')[-1].find('short_name').text
         print('Country code:', country_code)
     else:
