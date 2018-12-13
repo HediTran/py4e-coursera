@@ -1,5 +1,7 @@
 # This program read through a mail log, buid a histogram
 # to count how many messages have come from each email address
+# https://www.py4e.com/code3/mbox.txt
+# https://www.py4e.com/code3/mbox-short.txt
 
 fname = input("Enter the file name: ")
 try:
